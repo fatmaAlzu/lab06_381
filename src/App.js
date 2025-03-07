@@ -1,30 +1,7 @@
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
-
 import React from 'react';
+import Home from './Home';
+import About from './About';
+import Contact from './Contact';
 
 function App() {
   const currentYear = new Date().getFullYear(); 
@@ -33,9 +10,12 @@ function App() {
     <div>
       <h1> ENSF-381: Full Stack Web Development</h1>
       <p>React Components</p>
-      <p> Current Year: {currentYear}</p>
-      <p> {isLoggedIn ? "welcome back!" : "Please log in."} </p>
+      <p>Current Year: {currentYear}</p>
+      <p>{isLoggedIn ? "Welcome back!" : "Please log in."}</p>
       
+      <Home title="Home Page" description="Welcome to our website." />
+      <About title="About Us" description="We are passionate about delivering quality experiences." />
+      <Contact title="Contact Us" description="Feel free to reach out to us via email or phone." />
     </div>
   ) 
 }
