@@ -2,6 +2,7 @@ import React from 'react';
 import Home from './Home';
 import About from './About';
 import Contact from './Contact';
+import EngineeringTopics from "./EngineeringTopics";
 
 function App() {
   const currentYear = new Date().getFullYear(); 
